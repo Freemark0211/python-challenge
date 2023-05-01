@@ -68,7 +68,7 @@ else:
 original_stdout = sys.stdout
 
 # writes analysis to a text file
-with open('analysis.txt','w') as file1:
+with open(os.path.join('analysis','analysis.txt'),"w") as file1:
     sys.stdout = file1
 
     print("Election Results")
